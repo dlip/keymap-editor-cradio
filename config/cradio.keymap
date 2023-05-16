@@ -93,10 +93,10 @@
 
     left {
       bindings = <
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                          &trans  &trans    &trans  &trans
+    &trans        &trans     &trans         &trans   &trans    &trans  &trans  &trans  &trans  &trans
+  &kp LALT  &kp LG(LGUI)  &kp LCTRL          &mo 3  &kp TAB    &trans  &trans  &trans  &trans  &trans
+    &trans        &trans     &trans  &kp BACKSPACE  &kp ESC    &trans  &trans  &trans  &trans  &trans
+                                            &trans   &trans    &trans  &trans
       >;
 
       label = "Left";
@@ -104,13 +104,35 @@
 
     right {
       bindings = <
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                          &trans  &trans    &trans  &trans
+  &trans  &trans  &trans  &trans  &trans        &trans   &trans     &trans        &trans    &trans
+  &trans  &trans  &trans  &trans  &trans    &kp INSERT    &mo 4  &kp RCTRL  &kp LG(RGUI)  &kp RALT
+  &trans  &trans  &trans  &trans  &trans       &kp DEL  &kp RET     &trans        &trans    &trans
+                          &trans  &trans        &trans   &trans
       >;
 
       label = "Right";
+    };
+
+    number {
+      bindings = <
+  &trans  &trans  &trans  &trans  &trans       &trans  &kp N7  &kp N8  &kp N9    &trans
+  &trans  &trans  &trans  &trans  &trans    &kp EQUAL  &kp N4  &kp N5  &kp N6    &kp N0
+  &trans  &trans  &trans  &trans  &trans    &kp MINUS  &kp N1  &kp N2  &kp N3  &kp FSLH
+                          &trans  &trans       &trans  &trans
+      >;
+
+      label = "Number";
+    };
+
+    navigation {
+      bindings = <
+    &trans  &kp PG_UP    &kp UP  &kp PG_DN   &trans    &trans  &trans  &trans  &trans  &trans
+  &kp HOME   &kp LEFT  &kp DOWN  &kp RIGHT  &kp END    &trans  &trans  &trans  &trans  &trans
+    &trans     &trans    &trans     &trans   &trans    &trans  &trans  &trans  &trans  &trans
+                                    &trans   &trans    &trans  &trans
+      >;
+
+      label = "Navigation";
     };
   };
 };
