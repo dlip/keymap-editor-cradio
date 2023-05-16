@@ -47,10 +47,10 @@
 
     left {
       bindings = <
-    &trans        &trans     &trans          &mo 5    &mo 7    &trans  &trans  &trans  &trans  &trans
-  &kp LALT  &kp LG(LGUI)  &kp LCTRL          &mo 3  &kp TAB    &trans  &trans  &trans  &trans  &trans
-    &trans        &trans     &trans  &kp BACKSPACE  &kp ESC    &trans  &trans  &trans  &trans  &trans
-                                            &trans   &trans    &trans  &trans
+  &kp LC(Z)     &kp LC(A)  &kp LC(S)          &mo 5    &mo 7    &trans  &trans  &trans  &trans  &trans
+   &kp LALT  &kp LG(LGUI)  &kp LCTRL          &mo 3  &kp TAB    &trans  &trans  &trans  &trans  &trans
+  &kp LC(X)     &kp LC(C)  &kp LC(V)  &kp BACKSPACE  &kp ESC    &trans  &trans  &trans  &trans  &trans
+                                             &trans   &trans    &trans  &trans
       >;
 
       label = "Left";
